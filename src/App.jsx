@@ -57,7 +57,7 @@ export default function App() {
       setUpdatePasswordOpen(true);
       window.history.replaceState({}, "", window.location.pathname);
     } else if (initialAuthParams.get("access_token") || initialAuthParams.get("type") === "signup") {
-      setAuthNotice({ type: "success", text: "E-mail confirmado! Sua conta está pronta e você já está logada." });
+      setAuthNotice({ type: "success", text: "E-mail confirmado! Sua conta está pronta e você já pode continuar comprando." });
       window.history.replaceState({}, "", window.location.pathname);
     }
   }, [initialAuthParams]);
